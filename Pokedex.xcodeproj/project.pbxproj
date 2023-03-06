@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC11440929B57F4C002FFA67 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC11440829B57F4C002FFA67 /* RxSwift */; };
+		DC11441829B58EA8002FFA67 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DC11441729B58EA8002FFA67 /* .swiftlint.yml */; };
+		DC11442129B59AF7002FFA67 /* .pre-commit-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = DC11442029B59AF7002FFA67 /* .pre-commit-config.yaml */; };
 		DCCEDD5D29B50EEB00CD706A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEDD5C29B50EEB00CD706A /* AppDelegate.swift */; };
 		DCCEDD5F29B50EEB00CD706A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEDD5E29B50EEB00CD706A /* SceneDelegate.swift */; };
 		DCCEDD6129B50EEB00CD706A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEDD6029B50EEB00CD706A /* ViewController.swift */; };
@@ -16,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC11441729B58EA8002FFA67 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
+		DC11442029B59AF7002FFA67 /* .pre-commit-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ".pre-commit-config.yaml"; sourceTree = "<group>"; };
 		DCCEDD5929B50EEB00CD706A /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCEDD5C29B50EEB00CD706A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCCEDD5E29B50EEB00CD706A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC11440929B57F4C002FFA67 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 		DCCEDD5029B50EEB00CD706A = {
 			isa = PBXGroup;
 			children = (
+				DC11442029B59AF7002FFA67 /* .pre-commit-config.yaml */,
 				DCCEDD5B29B50EEB00CD706A /* Pokedex */,
 				DCCEDD5A29B50EEB00CD706A /* Products */,
 			);
@@ -56,13 +63,14 @@
 		DCCEDD5B29B50EEB00CD706A /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				DCCEDD6A29B50EEC00CD706A /* Info.plist */,
 				DCCEDD5C29B50EEB00CD706A /* AppDelegate.swift */,
 				DCCEDD5E29B50EEB00CD706A /* SceneDelegate.swift */,
 				DCCEDD6029B50EEB00CD706A /* ViewController.swift */,
 				DCCEDD6229B50EEB00CD706A /* Main.storyboard */,
 				DCCEDD6529B50EEC00CD706A /* Assets.xcassets */,
 				DCCEDD6729B50EEC00CD706A /* LaunchScreen.storyboard */,
-				DCCEDD6A29B50EEC00CD706A /* Info.plist */,
+				DC11441729B58EA8002FFA67 /* .swiftlint.yml */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -75,6 +83,7 @@
 			buildConfigurationList = DCCEDD6D29B50EEC00CD706A /* Build configuration list for PBXNativeTarget "Pokedex" */;
 			buildPhases = (
 				DCCEDD5529B50EEB00CD706A /* Sources */,
+				DC11441C29B5918A002FFA67 /* ShellScript */,
 				DCCEDD5629B50EEB00CD706A /* Frameworks */,
 				DCCEDD5729B50EEB00CD706A /* Resources */,
 			);
@@ -83,6 +92,9 @@
 			dependencies = (
 			);
 			name = Pokedex;
+			packageProductDependencies = (
+				DC11440829B57F4C002FFA67 /* RxSwift */,
+			);
 			productName = Pokedex;
 			productReference = DCCEDD5929B50EEB00CD706A /* Pokedex.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +123,9 @@
 				Base,
 			);
 			mainGroup = DCCEDD5029B50EEB00CD706A;
+			packageReferences = (
+				DC11440729B57F4C002FFA67 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = DCCEDD5A29B50EEB00CD706A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,13 +140,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC11441829B58EA8002FFA67 /* .swiftlint.yml in Resources */,
 				DCCEDD6929B50EEC00CD706A /* LaunchScreen.storyboard in Resources */,
 				DCCEDD6629B50EEC00CD706A /* Assets.xcassets in Resources */,
+				DC11442129B59AF7002FFA67 /* .pre-commit-config.yaml in Resources */,
 				DCCEDD6429B50EEB00CD706A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC11441C29B5918A002FFA67 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCCEDD5529B50EEB00CD706A /* Sources */ = {
@@ -358,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC11440729B57F4C002FFA67 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC11440829B57F4C002FFA67 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC11440729B57F4C002FFA67 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCCEDD5129B50EEB00CD706A /* Project object */;
 }
