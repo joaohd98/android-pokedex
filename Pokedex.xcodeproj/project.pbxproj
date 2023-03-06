@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC11440929B57F4C002FFA67 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC11440829B57F4C002FFA67 /* RxSwift */; };
-		DC11441829B58EA8002FFA67 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DC11441729B58EA8002FFA67 /* .swiftlint.yml */; };
-		DC11442129B59AF7002FFA67 /* .pre-commit-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = DC11442029B59AF7002FFA67 /* .pre-commit-config.yaml */; };
+		DC11442329B5A011002FFA67 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DC11442229B5A011002FFA67 /* .swiftlint.yml */; };
 		DCCEDD5D29B50EEB00CD706A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEDD5C29B50EEB00CD706A /* AppDelegate.swift */; };
 		DCCEDD5F29B50EEB00CD706A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEDD5E29B50EEB00CD706A /* SceneDelegate.swift */; };
 		DCCEDD6129B50EEB00CD706A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEDD6029B50EEB00CD706A /* ViewController.swift */; };
@@ -19,8 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC11441729B58EA8002FFA67 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
-		DC11442029B59AF7002FFA67 /* .pre-commit-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ".pre-commit-config.yaml"; sourceTree = "<group>"; };
+		DC11442229B5A011002FFA67 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DCCEDD5929B50EEB00CD706A /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCEDD5C29B50EEB00CD706A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCCEDD5E29B50EEB00CD706A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +44,6 @@
 		DCCEDD5029B50EEB00CD706A = {
 			isa = PBXGroup;
 			children = (
-				DC11442029B59AF7002FFA67 /* .pre-commit-config.yaml */,
 				DCCEDD5B29B50EEB00CD706A /* Pokedex */,
 				DCCEDD5A29B50EEB00CD706A /* Products */,
 			);
@@ -63,6 +60,7 @@
 		DCCEDD5B29B50EEB00CD706A /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				DC11442229B5A011002FFA67 /* .swiftlint.yml */,
 				DCCEDD6A29B50EEC00CD706A /* Info.plist */,
 				DCCEDD5C29B50EEB00CD706A /* AppDelegate.swift */,
 				DCCEDD5E29B50EEB00CD706A /* SceneDelegate.swift */,
@@ -70,7 +68,6 @@
 				DCCEDD6229B50EEB00CD706A /* Main.storyboard */,
 				DCCEDD6529B50EEC00CD706A /* Assets.xcassets */,
 				DCCEDD6729B50EEC00CD706A /* LaunchScreen.storyboard */,
-				DC11441729B58EA8002FFA67 /* .swiftlint.yml */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -140,10 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC11441829B58EA8002FFA67 /* .swiftlint.yml in Resources */,
+				DC11442329B5A011002FFA67 /* .swiftlint.yml in Resources */,
 				DCCEDD6929B50EEC00CD706A /* LaunchScreen.storyboard in Resources */,
 				DCCEDD6629B50EEC00CD706A /* Assets.xcassets in Resources */,
-				DC11442129B59AF7002FFA67 /* .pre-commit-config.yaml in Resources */,
 				DCCEDD6429B50EEB00CD706A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
